@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Lab</title>
+    <style>
+        p{
+            font-family: 'Segoe UI';
+            font-size: 30px;
+        }
+        .schema{
+            background-color: turquoise;
+            color: black;
+            text-decoration: none;
+            font-family: Segoe UI;
+            font-size: 30px;
+            padding: 10px 30px;
+            margin: 30px;
+        }
+        .control{
+            background-color: turquoise;
+            color: black;
+            text-decoration: none;
+            font-family: Segoe UI;
+            font-size: 30px;
+            padding: 10px 30px;
+            margin: 30px;
+            float: right;
+        }
+        .control2{
+            background-color: turquoise;
+            color: black;
+            text-decoration: none;
+            font-family: Segoe UI;
+            font-size: 30px;
+            padding: 10px 30px;
+            margin: 30px;
+            float: right;
+        }
+    </style>
+</head>
+<body background="img/arkaplan.png">
+    <center>
+        <p>Level 1</p>
+        <p>Which of the following schema has the planets in the correct order?</p>
+    </center>
+    <img id="planet1" src="img/sun.png" width="200" height="200">
+    <img id="planet2" src="img/mercury.png" width="50" height="50">
+    <img id="planet3" src="img/venus.png" width="100" height="100">
+    <img id="planet4" src="img/earth.png" width="125" height="125">
+    <img id="planet5" src="img/mars.png" width="90" height="90">
+    <img id="planet6" src="img/saturn.png" width="155" height="155">
+    <img id="planet7" src="img/jupiter.png" width="175" height="175">
+    <img id="planet8" src="img/uranus.png" width="150" height="150">
+    <img id="planet9" src="img/neptune.png" width="135" height="135">
+    <br>
+    <a class="schema" onclick="schema1();">1</a>
+    <a class="schema" onclick="schema2();">2</a>
+    <a class="schema" onclick="schema3();">3</a>
+    <a class="control" id="control" onclick="wronganswer();">Check</a>
+    <a class="control2" id="control2" href="scienceplay1end.html">Check</a>
+    <script>
+    document.getElementById("control").style.display="block";
+    document.getElementById("control2").style.display="none";
+    </script>
+    <script src="js/scienceplay1.js"></script>
+</body>
+</html>
